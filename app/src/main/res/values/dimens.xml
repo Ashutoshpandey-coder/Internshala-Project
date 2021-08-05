@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- item workshop dimen -->
+    <dimen name="workshop_content_imageSize">60dp</dimen>
+    <dimen name="workshop_content_marginBottom">10dp</dimen>
+    <dimen name="workshop_content_padding">10dp</dimen>
+    <dimen name="workshop_name_layout_marginStart">10dp</dimen>
+    <dimen name="item_workshop_text_size">18sp</dimen>
+    <dimen name="workshop_created_by_text_size">16sp</dimen>
+    <dimen name="item_workshop_divider_marginTop">5dp</dimen>
+    <dimen name="workshop_circular_border_width">0.5dp</dimen>
+    <dimen name="item_workshop_divider_height">0.3dp</dimen>
+    <dimen name="btn_marginStartEnd">20dp</dimen>
+    <dimen name="sign_up_btn_marginTop">30dp</dimen>
+    <dimen name="btn_paddingTopBottom">8dp</dimen>
+    <dimen name="btn_text_size">18sp</dimen>
+    <dimen name="phone_email_text_size">20sp</dimen>
+    <dimen name="phone_email_margin_top">5dp</dimen>
+    <dimen name="user_name_text_size">24sp</dimen>
+    <dimen name="user_name_margin_top">20dp</dimen>
+
+    <!-- progress Bar -->
+    <dimen name="progress_bar_content_padding">10dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_marginStart">15dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
+
+    <!-- sign up fragment-->
+    <dimen name="toolbar_title_text_size">18sp</dimen>
+    <dimen name="authentication_screen_content_marginTop">40dp</dimen>
+    <dimen name="authentication_screen_marginStartEnd">25dp</dimen>
+    <dimen name="authentication_description_text_size">16sp</dimen>
+    <dimen name="authentication_screen_card_view_marginTop">60dp</dimen>
+    <dimen name="card_view_elevation">10dp</dimen>
+    <dimen name="card_view_corner_radius">10dp</dimen>
+    <dimen name="card_view_layout_content_padding">16dp</dimen>
+    <dimen name="authentication_screen_til_marginTop">20dp</dimen>
+    <dimen name="authentication_screen_til_marginStartEnd">16dp</dimen>
+    <dimen name="et_text_size">16sp</dimen>
+</resources>

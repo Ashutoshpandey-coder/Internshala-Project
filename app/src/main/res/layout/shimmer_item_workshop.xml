@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/workshop_content_marginBottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/workshop_content_padding"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/workshop_content_imageSize"
+            android:layout_height="@dimen/workshop_content_imageSize"
+            android:id="@+id/iv_workshop_image"
+            android:background="@color/placeholder_bg"
+            app:civ_border_color="@color/primary_text_color"
+            android:contentDescription="@string/workshop_contentDescription"
+            app:civ_border_width="@dimen/workshop_circular_border_width"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/workshop_name_layout_marginStart"
+            android:layout_marginLeft="@dimen/workshop_name_layout_marginStart">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_workshop_text_size"
+                android:background="@color/placeholder_bg" />
+            <TextView
+                android:id="@+id/tv_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/workshop_created_by_text_size"
+                android:background="@color/placeholder_bg"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_workshop_divider_height"
+        android:background="@color/divider_color"
+        android:layout_marginTop="@dimen/item_workshop_divider_marginTop"
+        />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "625288831393",
+    "project_id": "intenshala-project",
+    "storage_bucket": "intenshala-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625288831393:android:23296e8f1f24028263abe0",
+        "android_client_info": {
+          "package_name": "com.example.internshala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625288831393-uvvv2i2elqsv8saolfntn9b0k83hok1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.internshala",
+            "certificate_hash": "aaabb03e6323dccdf398c758c2c36617853387eb"
+          }
+        },
+        {
+          "client_id": "625288831393-r35to809115tpr6sifkv06rbeho8i7iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMEsK6AALKvQcZENOL_-E_wHaVT9skPx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625288831393-r35to809115tpr6sifkv06rbeho8i7iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

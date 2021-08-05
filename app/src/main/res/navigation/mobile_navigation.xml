@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.internshala.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/fragment_dashboard_to_fragment_workshop"
+            app:destination="@id/navigation_workshop" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_workshop"
+        android:name="com.example.internshala.ui.workshop.WorkshopFragment"
+        android:label="@string/title_workshop"
+        tools:layout="@layout/fragment_workshop" >
+        <action
+            android:id="@+id/fragment_workshop_to_fragment_workshop_detail"
+            app:destination="@id/navigation_workshop_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.internshala.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/fragment_profile_to_fragment_sign_up"
+            app:destination="@id/navigation_sign_up" />
+        <action
+            android:id="@+id/fragment_profile_to_fragment_log_in"
+            app:destination="@id/navigation_log_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_sign_up"
+        android:name="com.example.internshala.ui.profile.SignUpFragment"
+        android:label="@string/signup"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/fragment_sign_up_to_fragment_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_log_in"
+        android:name="com.example.internshala.ui.profile.LogInFragment"
+        android:label="@string/log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/fragment_log_in_to_fragment_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_workshop_detail"
+        android:name="com.example.internshala.ui.workshop.WorkshopDetailFragment"
+        android:label="@string/title_workshop"
+        tools:layout="@layout/fragment_workshop_detail" >
+        <action
+            android:id="@+id/fragment_workshop_detail_to_fragment_workshop"
+            app:destination="@id/navigation_workshop" />
+        <action
+            android:id="@+id/fragment_workshop_detail_to_fragment_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>
