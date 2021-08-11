@@ -13,6 +13,8 @@ import com.example.internshala.R
 import com.example.internshala.activities.MainActivity
 import com.example.internshala.databinding.FragmentLogInBinding
 import com.example.internshala.databinding.FragmentSignUpBinding
+import com.example.internshala.firestore.FireStoreClass
+import com.example.internshala.models.User
 import com.example.internshala.ui.dashboard.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
 
@@ -29,7 +31,7 @@ class LogInFragment : BaseFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         binding = FragmentLogInBinding.inflate(inflater,container,false)

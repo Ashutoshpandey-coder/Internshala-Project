@@ -9,6 +9,9 @@ class Constants {
        const val WORKSHOP_MODEL : String = "workshopModel"
        const val USER_DETAIL_SHARED_PREFERENCE : String = "userDetails"
 
+       //collections
+       const val USERS : String = "users"
+
        const val NAME : String = "name"
        const val PHONE : String = "phone"
        const val EMAIL : String = "email"

@@ -11,6 +11,8 @@ import androidx.navigation.Navigation
 import com.example.internshala.R
 import com.example.internshala.activities.MainActivity
 import com.example.internshala.databinding.FragmentProfileBinding
+import com.example.internshala.firestore.FireStoreClass
+import com.example.internshala.models.User
 import com.example.internshala.ui.dashboard.BaseFragment
 import com.example.internshala.utils.Constants
 
@@ -62,7 +64,27 @@ class ProfileFragment : BaseFragment() {
             binding.btnSignUp.text = getString(R.string.log_out_text)
         }
 
+        if (Constants.getCurrentUserId().isNotEmpty() && binding.tvUserEmail.text.equals(getString(R.string.dummy_email_id))){
+            showProgressDialog(getString(R.string.please_wait))
+            FireStoreClass().getUserDetails(this)
+        }
+
         return binding.root
+    }
+
+
+    fun userLoggedInSuccess(userDetails : User?){
+        hideProgressDialog()
+        if (userDetails != null){
+            binding.tvUserName.text = userDetails.name
+            binding.tvUserEmail.text = userDetails.email
+            binding.tvUserNumber.text = userDetails.mobile.toString()
+
+            binding.tvLoggedInGuest.visibility = View.GONE
+            binding.llHaveAccount.visibility = View.GONE
+            binding.btnSignUp.text = getString(R.string.log_out_text)
+        }
+
     }
 
     override fun onDestroyView() {
