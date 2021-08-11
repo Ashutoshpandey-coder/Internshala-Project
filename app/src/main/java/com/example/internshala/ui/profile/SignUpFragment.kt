@@ -85,7 +85,7 @@ class SignUpFragment : BaseFragment() {
                         name, registeredEmail!!, phone.toLong()
                     )
 
-                    showProgressDialog(getString(R.string.please_wait))
+//                    showProgressDialog(getString(R.string.please_wait))
                     FireStoreClass().registerUser(this,user)
 
                     FirebaseAuth.getInstance()
@@ -131,7 +131,7 @@ class SignUpFragment : BaseFragment() {
     }
 
     fun userRegistrationSuccess() {
-        hideProgressDialog()
+//        hideProgressDialog()
 //        Toast.makeText(requireContext(), "You are registered successfully", Toast.LENGTH_SHORT)
 //            .show()
     }

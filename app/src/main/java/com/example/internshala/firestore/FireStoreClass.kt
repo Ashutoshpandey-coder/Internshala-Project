@@ -25,7 +25,7 @@ class FireStoreClass {
             .addOnSuccessListener {
                 fragment.userRegistrationSuccess()
             }.addOnFailureListener { exception ->
-                fragment.hideProgressDialog()
+//                fragment.hideProgressDialog()
                 Log.e(fragment.javaClass.simpleName, exception.message.toString())
             }
 
