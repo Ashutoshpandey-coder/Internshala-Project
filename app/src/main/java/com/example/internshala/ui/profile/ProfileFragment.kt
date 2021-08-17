@@ -15,6 +15,8 @@ import com.example.internshala.firestore.FireStoreClass
 import com.example.internshala.models.User
 import com.example.internshala.ui.dashboard.BaseFragment
 import com.example.internshala.utils.Constants
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.ktx.Firebase
 
 class ProfileFragment : BaseFragment() {
 
@@ -42,7 +44,20 @@ class ProfileFragment : BaseFragment() {
                 Navigation.findNavController(requireView())
                     .navigate(R.id.fragment_profile_to_fragment_sign_up)
             }else{
-                Toast.makeText(requireContext(), "This feature is not implemented yet.", Toast.LENGTH_SHORT).show()
+                FirebaseAuth.getInstance().signOut()
+                binding.btnSignUp.text = getString(R.string.signup)
+
+                binding.tvLoggedInGuest.visibility = View.VISIBLE
+
+                binding.llHaveAccount.visibility = View.VISIBLE
+
+                binding.tvUserName.text = getString(R.string.text_guest)
+                binding.tvUserEmail.text = getString(R.string.dummy_email_id)
+                binding.tvUserNumber.text = getString(R.string.dummy_phone_number)
+
+                Toast.makeText(requireContext(), "Successfully logout.", Toast.LENGTH_SHORT).show()
+
+
             }
             hideProgressDialog()
         }
